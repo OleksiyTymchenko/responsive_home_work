@@ -1,0 +1,78 @@
+.section {
+  padding: 80px 0 100px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.text-part {
+  width: 100%;
+  max-width: 580px;
+}
+
+.text-part__title {
+  padding-bottom: 25px;
+}
+
+.text-part__title__text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 48px;
+  font-weight: 600;
+}
+
+.text-part__explanation {
+  padding-bottom: 30px;
+}
+
+.text-part__explanation__text {
+  color: #848fac;
+}
+
+.section__button {
+  max-width: 150px;
+}
+
+/*=================== photo part==============================*/
+.photo-part {
+  display: flex;
+}
+
+.photo-part__item:first-child {
+  margin-left: 30px;
+}
+
+.photo-part__item {
+  margin-right: 25px;
+}
+
+.photo-part__item:last-child {
+  margin-right: 0px;
+}
+
+.photo-center {
+  padding-top: 80px;
+}
+
+/*====================== media =========================*/
+
+@media (max-width: 1200px) {
+  .section {
+    margin: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .text-part {
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 670px) {
+  .photo-part__item:first-child {
+    margin-left: 0px;
+  }
+
+  .photo-part__item {
+    margin-right: 0px;
+  }
+}
